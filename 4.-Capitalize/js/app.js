@@ -4,6 +4,7 @@ const word = "este ejercicio pasa a mayusculas la primer letra de cada palabra";
 
 const capitalize = str => {
   let newStr = str.split(" ");
+  console.log('newStr', newStr)
   let result = [];
     newStr.forEach(palabra=> {
       let primerLetra = palabra.charAt(0).toUpperCase();

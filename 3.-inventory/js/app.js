@@ -15,6 +15,7 @@ const inventory = [
   { name: "Ciruela", category: "fruit", stock: "8" }
 ];
 
+/*
 var totalByCategory = function(inventory, category) {
   var filterCategory = function filterCategory(prod) {
     var totalProd = prod.category === category;
@@ -30,7 +31,29 @@ var totalByCategory = function(inventory, category) {
 };
 
 totalByCategory(inventory, "beverage");
+*/
+
+const totalItems = inventory.filter(prod => prod.category == 'beverage')
+
+console.log('Items', totalItems)
+
+const TotalItemsStock = inventory.reduce((acc, obj) => 
+
+acc + parseInt(obj.stock)
+
+, 0)
+
+console.log('totalStock', TotalItemsStock)
+
 
 
 // Comenta todo el código de arriba (ecepto la const inventory) y pasa el código a ES6
-
+/*
+let names = ['Jordi',
+            'Pere', 
+           'Adrià', 
+           'Pol', 
+          '¿Cristina?'
+    ],
+const red = 
+*/
